@@ -1,0 +1,82 @@
+*
+{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;/*transforma um ele em um conteiner flexivel alinha,
+    distribuir e dimensionar os itens de maneira eficiente,
+     tanto no eixo horizontalç quanto no vertical.*/
+     justify-content: center;
+     align-items:center;
+     height:100vh;
+}
+
+.container
+{
+    display: flex;/* alinhar elemtento deixcar um do lado do outro*/
+    flex-wrap:wrap; /* Diz ao navegador se nao couber nunma linha, quebrem para a proxima.*/
+    gap: 20px; /* Define um espaçamento uniforme entre todos os itens*/
+    padding-top: 15 0px;
+}
+
+.card
+{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden; /* oculta qualquer partye do conteudo que transborde da area visivel do elemento, sem exibir barras de rolagem*/
+    width: 400px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.card img
+{
+    width: 100px;
+    height: auto;
+    
+}
+.card h3
+{
+    margin: 15px 0;
+    color:#333;
+}
+
+.card p
+{
+    padding: 0 15px;
+    color: #666;
+}
+
+.card a
+{
+    display: inline-block;/*faz elemtemto ficar na mesma linha, permite definir largura e altura*/
+    background-color: #007bff;
+    margin: 15px 0;
+    color:#fff;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3 ease;
+}
+
+/*efeito hover noi link*/
+.card a:hover
+{
+    background-color: #0056b3;
+}
+
+/* Efeito hover no cartao*/
+ .card:hover
+{
+    transform: translateY(-10px);/*movimenta no eixo x (esq/dir) para cima*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
